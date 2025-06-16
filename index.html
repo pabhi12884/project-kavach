@@ -3,31 +3,35 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Project Kavach – Intelligent Email Security Agent</title>
+  <title>Project Kavach – Email Security Agent</title>
   <link rel="stylesheet" href="styles.css" />
-  <link rel="icon" href="logo.svg" type="image/svg+xml">
+  <link rel="icon" href="logo.png" type="image/png">
 </head>
 <body>
-  <header>
-    <div class="container">
-      <img src="logo.svg" alt="Project Kavach Logo" class="logo" />
-      <nav>
-        <ul>
-          <li><a href="#features">Features</a></li>
-          <li><a href="#how">How It Works</a></li>
-          <li><a href="#security">Security</a></li>
-        </ul>
-      </nav>
+  <div class="single-page">
+    <img src="logo.png" alt="Project Kavach Logo" class="logo-centered" />
+    <div class="content">
+      <h1>Project Kavach – Secure Email Agent</h1>
+
+      <p><strong>Why This Matters:</strong> Email is the most common entry point for cyberattacks. Phishing, spoofing, and malware-laced attachments are often missed by traditional filters. With the rise of targeted social engineering attacks, it's no longer enough to rely on rule-based spam filters. We need a smarter, adaptive solution.</p>
+
+      <p><strong>What Project Kavach Does:</strong> It’s an open-source email agent designed to provide intelligent, explainable security for Gmail. The agent deeply inspects every email using trusted techniques — no shortcuts or unverifiable decisions.</p>
+
+      <ul>
+        <li>Scans headers and body for phishing, spoofing, and impersonation attempts</li>
+        <li>Validates all domains and URLs against real-time threat intelligence databases</li>
+        <li>Analyzes attachments in isolated sandboxes (e.g., Any.Run) for malicious behavior</li>
+        <li>Explains why emails are marked as spam or sent to trash — no black-box behavior</li>
+        <li>Allows users to correct the agent's actions, and it adapts to improve over time</li>
+        <li>Designed with security-first principles — no persistent email storage, no remote control risks</li>
+      </ul>
+
+      <p><strong>How It Evolves:</strong> Every user correction helps the agent learn and become more accurate. Over time, it builds a contextual understanding of what is and isn't a threat, tailored to your usage — without compromising on transparency or safety.</p>
+
+      <p><strong>Our Vision:</strong> Project Kavach is fully open-source. Our goal is to create a trustworthy, verifiable system that anyone can audit, contribute to, and use. This is a real solution to a real problem — built by and for the security community.</p>
+
+      <p>We're starting with Gmail integration to test and refine the model, then expanding further. Join us in building a smarter, safer inbox.</p>
     </div>
-  </header>
-
-  <main>
-    <section class="hero">
-      <div class="container">
-        <h1>Protect Your Inbox with Intelligent Email Threat Analysis</h1>
-        <p>Project Kavach is an automated email security agent that inspects every email, verifies its contents, and protects your Gmail from threats — with full transparency. We are currently focusing on Gmail integration for initial testing and deployment.</p>
-      </div>
-    </section>
-
-    <section id="features" class="features">
-      <div class="container">
+  </div>
+</body>
+</html>
