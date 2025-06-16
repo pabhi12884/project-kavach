@@ -1,51 +1,61 @@
+/* Reset and base */
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-  margin: 0;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
-    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  background-color: #f7f9fa;
-  color: #222;
-  line-height: 1.6;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f5f7fa;
+  color: #333;
+  line-height: 1.75;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 .container {
-  max-width: 700px;
-  margin: 3rem auto;
-  padding: 0 1rem;
-  text-align: left;
+  max-width: 720px;
+  margin: 4rem auto;
+  padding: 0 1.5rem;
+  background: #fff;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.07);
+  border-radius: 8px;
 }
 
 h1 {
-  font-size: 2rem;
-  font-weight: 700;
-  color: #0b132b;
-  margin-bottom: 1.5rem;
+  font-weight: 800;
+  font-size: 2.8rem;
   text-align: center;
+  margin-bottom: 2.8rem;
+  color: #2c3e50; /* deep blue/gray */
+  border-bottom: 3px solid #2980b9; /* accent underline */
+  padding-bottom: 0.6rem;
+}
+
+section {
+  font-size: 1.1rem;
+  color: #444;
+  text-align: left;
 }
 
 section p {
-  font-size: 1.05rem;
-  margin-bottom: 1.4rem;
-  color: #333;
+  margin-bottom: 1.6rem;
 }
 
 section ul {
-  list-style: disc inside;
-  margin-bottom: 1.8rem;
-  padding-left: 1.2rem;
-  color: #333;
+  margin-left: 1.4rem;
+  margin-bottom: 2rem;
+  list-style-type: disc;
+  color: #555;
 }
 
 section ul li {
-  margin-bottom: 0.6rem;
-  font-size: 1rem;
+  margin-bottom: 0.8rem;
+  font-weight: 500;
 }
 
 strong {
-  color: #0b132b;
+  color: #2980b9; /* accent color for highlights */
+  font-weight: 700;
 }
