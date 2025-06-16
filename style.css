@@ -6,76 +6,42 @@ body {
   line-height: 1.6;
 }
 
-header {
-  background-color: #0b132b;
-  color: #fff;
-  padding: 1rem 0;
-}
-
-header .container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  max-width: 1200px;
+.single-page {
+  max-width: 720px;
   margin: 0 auto;
-  padding: 0 1rem;
-}
-
-.logo {
-  height: 48px;
-}
-
-nav ul {
-  list-style: none;
-  display: flex;
-  gap: 1rem;
-  margin: 0;
-  padding: 0;
-}
-
-nav a {
-  color: #fff;
-  text-decoration: none;
-  font-weight: 500;
-}
-
-.hero {
-  background-color: #1c2541;
-  color: #fff;
-  padding: 4rem 1rem;
+  padding: 2rem 1rem;
   text-align: center;
 }
 
-.hero h1 {
-  font-size: 2.5rem;
+.logo-centered {
+  width: 80px;
+  margin: 0 auto 1.5rem;
+  display: block;
+}
+
+.content h1 {
+  font-size: 1.8rem;
   margin-bottom: 1rem;
-}
-
-.features,
-.how,
-.security {
-  padding: 3rem 1rem;
-  background-color: #fff;
-}
-
-.features h2,
-.how h2,
-.security h2 {
   color: #0b132b;
-  margin-bottom: 1rem;
 }
 
-.features ul,
-.security ul {
+.content p {
+  font-size: 1rem;
+  margin-bottom: 1.25rem;
+  text-align: left;
+}
+
+.content ul {
+  text-align: left;
+  margin: 0 auto 1.5rem;
+  padding-left: 1.2rem;
   list-style: disc;
-  padding-left: 1.5rem;
 }
 
-.how ol {
-  padding-left: 1.5rem;
+.content li {
+  margin-bottom: 0.5rem;
 }
 
-.container {
-  max-width: 960px;
-  margin: 0 auto;
+.content strong {
+  color: #0b132b;
 }
