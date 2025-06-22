@@ -1,73 +1,198 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Project Kavach – AI Email Security Agent</title>
-  <link rel="stylesheet" href="styles.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Project Kavach - AI Gmail Security Agent</title>
+  <style>
+    body {
+      margin: 0; padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f4f6f8;
+      color: #1a202c;
+      line-height: 1.6;
+    }
+    header {
+      background: #2563eb;
+      color: white;
+      padding: 1rem 2rem;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+    }
+    .logo-container {
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+    }
+    .logo-container img {
+      width: 140px; /* adjust to your logo width */
+      height: auto;
+      display: block;
+    }
+    .logo-container span {
+      font-weight: 700;
+      font-size: 1.8rem;
+      color: white;
+      margin-left: 12px;
+      user-select: none;
+    }
+    main {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+    section {
+      margin-bottom: 3rem;
+      background: white;
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    }
+    h1, h2 {
+      color: #2563eb;
+      margin-bottom: 1rem;
+    }
+    p {
+      margin-bottom: 1rem;
+      font-size: 1.05rem;
+    }
+    ul {
+      list-style-type: disc;
+      margin-left: 1.5rem;
+      margin-bottom: 1rem;
+    }
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+      gap: 1.5rem;
+    }
+    .feature-box {
+      background: #e0e7ff;
+      border-radius: 8px;
+      padding: 1rem;
+      text-align: center;
+      box-shadow: 0 2px 8px rgba(37, 99, 235, 0.3);
+    }
+    .feature-box h3 {
+      margin-top: 0.75rem;
+      margin-bottom: 0.5rem;
+      color: #1e40af;
+    }
+    .feature-box p {
+      margin: 0;
+      font-size: 0.95rem;
+      color: #374151;
+    }
+    .btn-primary {
+      background-color: #2563eb;
+      color: white;
+      padding: 0.9rem 2rem;
+      border: none;
+      border-radius: 6px;
+      font-weight: 600;
+      font-size: 1.1rem;
+      cursor: pointer;
+      text-decoration: none;
+      display: inline-block;
+      transition: background-color 0.3s ease;
+    }
+    .btn-primary:hover {
+      background-color: #1d4ed8;
+    }
+    footer {
+      text-align: center;
+      padding: 1.5rem;
+      font-size: 0.9rem;
+      color: #6b7280;
+    }
+    a {
+      color: #2563eb;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    @media (max-width: 600px) {
+      .features {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
 </head>
 <body>
-  <header class="hero">
-    <div class="container">
-      <img src="logo.svg" alt="Project Kavach Logo" class="logo" />
-      <h1>Project Kavach</h1>
-      <p class="tagline">An AI-powered agent that defends your Gmail inbox from phishing, malware, and AI threats.</p>
-    </div>
-  </header>
 
-  <section class="problem container">
-    <h2>The Problem</h2>
-    <p>Email threats are evolving. Attackers use AI to craft phishing messages that bypass traditional spam filters. Malware hides in attachments and links appear legitimate.</p>
-  </section>
+<header>
+  <div class="logo-container">
+    <img src="logo.png" alt="Project Kavach Logo" />
+    <span>Project Kavach</span>
+  </div>
+</header>
 
-  <section class="solution container">
-    <h2>Our Solution</h2>
-    <p>Project Kavach scans each email in your inbox using advanced techniques: file hash checks, AI-content detection, header analysis, and sandbox execution — giving you clear explanations and risk scores.</p>
-  </section>
+<main>
 
-  <section class="features container features-grid">
-    <div class="feature">
-      <img src="graphics/risk-score.svg" alt="Risk Score Icon" />
-      <h3>Explainable Risk Score</h3>
-      <p>Every email gets a detailed risk score based on over 10 cybersecurity signals.</p>
-    </div>
-    <div class="feature">
-      <img src="graphics/ai-detection.svg" alt="AI Text Detection" />
-      <h3>AI Text Detection</h3>
-      <p>Detects emails written by AI to identify impersonation and social engineering.</p>
-    </div>
-    <div class="feature">
-      <img src="graphics/sandbox.svg" alt="Sandboxing Icon" />
-      <h3>File Sandboxing</h3>
-      <p>Suspicious attachments are tested in a virtual sandbox (e.g. Any.run) automatically.</p>
-    </div>
-    <div class="feature">
-      <img src="graphics/gmail.svg" alt="Gmail Logo" />
-      <h3>Gmail Integration</h3>
-      <p>Integrated directly into your inbox using Gmail API for real-time analysis.</p>
-    </div>
-  </section>
+<section>
+  <h1>An AI-powered agent that defends your Gmail inbox from phishing, malware, and AI threats.</h1>
+</section>
 
-  <section class="why container">
-    <h2>Why Project Kavach?</h2>
-    <p>We don't just block threats. We explain them. Kavach learns from user feedback and improves continuously — with transparency and trust at the core.</p>
-  </section>
+<section>
+  <h2>The Problem</h2>
+  <p>Email threats are evolving. Attackers use AI to craft phishing messages that bypass traditional spam filters. Malware hides in attachments and links appear legitimate.</p>
+</section>
 
-  <section class="get-started container">
-    <h2>How It Works</h2>
-    <ol>
-      <li>Connect your Gmail securely with OAuth</li>
-      <li>Every new email is scanned in real time</li>
-      <li>Each threat is explained, and a score is shown</li>
-      <li>Users can submit feedback to improve the agent</li>
-    </ol>
-  </section>
+<section>
+  <h2>Our Solution</h2>
+  <p>Project Kavach scans each email in your inbox using advanced techniques: file hash checks, AI-content detection, header analysis, and sandbox execution — giving you clear explanations and risk scores.</p>
+</section>
 
-  <section class="contact container">
-    <h2>Follow the Project</h2>
-    <p>This is an active project. Follow it on <a href="https://github.com/YOUR_GITHUB" target="_blank">GitHub</a> or contact us at <strong>team@projectkavach.com</strong>.</p>
-  </section>
+<section class="features">
+  <div class="feature-box">
+    <h3>Explainable Risk Score</h3>
+    <p>Every email gets a detailed risk score based on over 10 cybersecurity signals.</p>
+  </div>
+  <div class="feature-box">
+    <h3>AI Text Detection</h3>
+    <p>Detects emails written by AI to identify impersonation and social engineering.</p>
+  </div>
+  <div class="feature-box">
+    <h3>File Sandboxing</h3>
+    <p>Suspicious attachments are tested in a virtual sandbox (e.g. Any.run) automatically.</p>
+  </div>
+  <div class="feature-box">
+    <h3>Gmail Integration</h3>
+    <p>Integrated directly into your inbox using Gmail API for real-time analysis.</p>
+  </div>
+</section>
+
+<section>
+  <h2>Why Project Kavach?</h2>
+  <p>We don't just block threats. We explain them. Kavach learns from user feedback and improves continuously — with transparency and trust at the core.</p>
+</section>
+
+<section>
+  <h2>How It Works</h2>
+  <ul>
+    <li>Connect your Gmail securely with OAuth</li>
+    <li>Every new email is scanned in real time</li>
+    <li>Each threat is explained, and a score is shown</li>
+    <li>Users can submit feedback to improve the agent</li>
+  </ul>
+</section>
+
+<section style="text-align:center;">
+  <a href="https://github.com/projectkavach" class="btn-primary" target="_blank" rel="noopener">Follow the Project on GitHub</a>
+</section>
+
+</main>
+
+<footer>
+  Contact us at <a href="mailto:team@projectkavach.com">team@projectkavach.com</a>
+</footer>
+
 </body>
 </html>
